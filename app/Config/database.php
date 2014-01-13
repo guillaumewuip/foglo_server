@@ -59,20 +59,19 @@
  */
 class DATABASE_CONFIG {
 
-	
-	//-  Local
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'localhost',
+		'host' => '127.0.0.1',
 		'login' => 'root',
 		'password' => 'root',
 		'database' => 'foglo',
 		'prefix' => '',
 		'encoding' => 'utf8',
+		'port' => '/Applications/MAMP/tmp/mysql/mysql.sock /tmp/mysql.sock'
 	);
 
-	public $test = array(
+	/*public $test = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
@@ -81,18 +80,5 @@ class DATABASE_CONFIG {
 		'database' => 'test_database_name',
 		'prefix' => '',
 		//'encoding' => 'utf8',
-	);
-
-	/* 
-	//- En ligne
-	public $default = array(
-		'datasource' => 'Database/Mysql',
-		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'foglof1_i',
-		'password' => 'l?s~#oc3=Rw%',
-		'database' => 'foglof1_data',
-		'prefix' => '',
-		'encoding' => 'utf8',
 	);*/
 }
