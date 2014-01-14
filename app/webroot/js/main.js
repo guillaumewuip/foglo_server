@@ -310,7 +310,7 @@ $(document).ready(function(){
 	function _slider(widget) {
 		var name = $(widget).find('div.content').data('name');
 		//Si widget à slider
-		if(name == 'tan' || name == 'perso' || name == 'twitter' || name == 'horloge' || name == 'air' || name == 'rss' || name == 'facebook')
+		if(name == 'tan' || name == 'perso' || name == 'twitter' || name == 'horloge' || name == 'air' || name == 'rss' || name == 'facebook' || name == 'bicloo')
 		{
 			//Init
 			var slider = $(widget).find('div.slider');
@@ -383,6 +383,13 @@ $(document).ready(function(){
 				//Si widget Tan, lacement completeTan(), pareil pour Lila
 				if(typeof(name) != 'undefined')
 				{
+					//Activation des select2 par défaut
+					//select évolué, avec champ de recherche
+					$('.select2').select2({
+						placeholder: "Choisissez une option",
+						allowClear: true
+					});
+
 					if(name == 'tan'){
 						completeTan(widget);
 					}
